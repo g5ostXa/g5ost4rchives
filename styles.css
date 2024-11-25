@@ -39,7 +39,7 @@ header.tabs {
     align-items: center;
     gap: 20px;
     width: 100%;
-    flex: 1;
+    flex-grow: 1;
     padding-top: 20px;
 }
 
@@ -69,4 +69,5 @@ header.tabs {
     color: #c0caf5;
     width: 100%;
     margin-top: auto;
+    flex-shrink: 0;
 }
