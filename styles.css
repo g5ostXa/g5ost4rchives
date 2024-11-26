@@ -6,33 +6,37 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
+
 header.tabs {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
     width: 100%;
     background-color: #090A13;
-    padding: 10px 0;
+    padding: 10px 5px;
+    box-sizing: border-box;
 }
+
 .tab {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #c0caf5;
-    cursor: default;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
     background-color: transparent;
 }
+
 .tab:hover {
     background-color: #6791c9;
-    border-radius: 5px;
     color: #090A13;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .container {
     background-color: #090A13;
     display: flex;
@@ -41,46 +45,45 @@ header.tabs {
     gap: 20px;
     width: 100%;
     flex: 1;
-    padding-top: 20px;
-    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 .main-image {
-    width: 300px;
-    height: 300px;
+    max-width: 90%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 .main-image:hover {
     transform: scale(1.05);
 }
+
 .typing-svg {
     filter: drop-shadow(0 0 5px #6791c9);
+    max-width: 100%;
+    height: auto;
 }
+
 .about h1 {
     color: #6791c9;
+    text-align: center;
 }
+
+code {
+    word-wrap: break-word;
+    max-width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
 .footer {
     text-align: center;
     padding: 10px 0;
     background-color: #090A13;
     color: #c0caf5;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.email-link {
-    color: #6791c9;
-    text-decoration: none;
-    font-size: 1.0em;
-    padding: 5px 10px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    background-color: #090A13;
-}
-
-.email-link:hover {
-    text-decoration: underline;
-    background-color: #090A13;
-    cursor: pointer;
+    position: relative;
 }
