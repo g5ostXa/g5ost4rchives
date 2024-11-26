@@ -66,11 +66,6 @@ header.tabs {
     height: auto;
 }
 
-.about h1 {
-    color: #6791c9;
-    text-align: center;
-}
-
 code {
     word-wrap: break-word;
     max-width: 90%;
