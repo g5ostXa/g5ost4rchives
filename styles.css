@@ -50,7 +50,8 @@ header.tabs {
 }
 
 .main-image {
-    max-width: 90%;
+    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -58,6 +59,12 @@ header.tabs {
 
 .main-image:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .main-image {
+        max-width: 90%; /* Adjust size for smaller screens */
+    }
 }
 
 .typing-svg {
