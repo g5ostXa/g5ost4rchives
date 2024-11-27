@@ -61,12 +61,6 @@ header.tabs {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .main-image {
-        max-width: 90%; /* Adjust size for smaller screens */
-    }
-}
-
 .typing-svg {
     filter: drop-shadow(0 0 5px #6791c9);
     max-width: 100%;
